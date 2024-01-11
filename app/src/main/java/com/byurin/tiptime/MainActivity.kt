@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         var tip = tipPercentage * cost
         // 팁 올림할 경우
         if (binding.roundUpSwitch.isChecked) {
-            tip = kotlin.math.c수il(tip)
+            tip = kotlin.math.ceil(tip)
         }
         // 계산된 팁 화면에 표시
         displayTip(tip)
